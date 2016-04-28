@@ -1,0 +1,29 @@
+<link rel="import" href="./bower_components/polymer/polymer.html">
+<script src="./bower_components/floatl/dist/js/floatl.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./bower_components/floatl/dist/css/floatl.css">
+<dom-module id="input-floatl">
+    <template>
+        <style>
+            .floatl__input {
+                height: 18px;
+            }
+        </style>
+        <div class="floatl">
+            <label class="floatl__label">{{label}}</label>
+            <input class="floatl__input" placeholder="{{label}}" type="text"></input>
+        </div>
+    </template>
+    <script>
+        Polymer({
+            is: 'input-floatl',
+            ready: function() {
+                new Floatl(this.$$('.floatl'));
+            },
+            properties: {
+                label: {
+                    type: String
+                }
+            }
+        });
+    </script>
+</dom-module>

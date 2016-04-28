@@ -1,0 +1,21 @@
+{
+  "name": "floatl-polymer",
+  "authors": [
+    "César Suárez <suarez.ortega.cesar@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "floatl": "^0.3.0",
+    "polymer": "Polymer/polymer#^1.4.0"
+  }
+}
